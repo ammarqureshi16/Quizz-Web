@@ -1,0 +1,123 @@
+.main-Row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 480px;
+}
+.main-Card-Col {
+  background-color: #0d1427;
+}
+.quiz-Text-Heading{
+  color: white;
+  text-align: center;
+}
+/* h3,
+h5,
+h6,
+button {
+  font-family: cursive;
+}
+.main-Row {
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-Col-Card {
+  border: solid 2px #ededed;
+  box-shadow: 2px 2px 4px 4px #ededed;
+  height: 300px;
+  border-radius: 10px;
+  background-color: whitesmoke;
+}
+.total-Per-Main-Row {
+  height: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.total-Answer-Text {
+  font-family: cursive;
+  font-size: 20px;
+  text-align: center;
+}
+.percentage-Text {
+  text-align: center;
+  font-size: 15px;
+  font-family: cursive;
+}
+#reStart-Button-Col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.restStart-Button {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  height: 40px;
+  width: 50%;
+  font-family: cursive;
+  font-size: 12px;
+  background-color: red;
+  color: white;
+  border-radius: 16px;
+}
+.restStart-Button:hover {
+  background-color: white;
+  border: solid 2px red;
+  color: black;
+}
+.ques-Text {
+  font-family: cursive;
+  text-align: center;
+}
+.sub-Nex-Button-Col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.submit-Button {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  height: 40px;
+  width: 50%;
+  font-family: cursive;
+  font-size: 12px;
+  background-color: royalblue;
+  color: white;
+  border-radius: 16px;
+}
+.next-Button {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  height: 40px;
+  width: 50%;
+  font-family: cursive;
+  font-size: 12px;
+  background-color: royalblue;
+  color: white;
+  border-radius: 16px;
+}
+.next-Button:hover {
+  background-color: white;
+  border: solid 2px royalblue;
+  color: black;
+}
+.list {
+  padding: 5px;
+  font-family: cursive;
+  font-weight: none;
+  margin-bottom: 8px;
+  border-radius: 15px;
+  background-color: whitesmoke;
+}
+.list:hover {
+  background-color: white;
+  color: black;
+} */

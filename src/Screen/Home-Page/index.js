@@ -18,8 +18,8 @@ export default function Home() {
       swal("Selet One Option Plase.");
     } else {
       if (currenQuestion !== Quest.length - 1) {
+        setResult(true);
       }
-      setResult(true);
       if (correctAnsw) {
         setQuestionNumber(questionNumber + 1);
         setcurrenQuestion(currenQuestion + 1);

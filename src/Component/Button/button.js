@@ -1,11 +1,12 @@
 import React from "react";
-import "./button.css"
+import "./button.css";
 
 export default function Buttons(props) {
-    return(
-        <>
-        <button onClick={props.onClick}>{props.Text}</button>
-        </>
-    )
-    
+  return (
+    <>
+      <button className={props.className} onClick={props.onClick}>
+        {props.Text}
+      </button>
+    </>
+  );
 }

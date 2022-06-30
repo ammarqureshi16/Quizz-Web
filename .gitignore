@@ -21,3 +21,7 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Install
+npm install react-bootstrap bootstrap
+npm install sweetalert

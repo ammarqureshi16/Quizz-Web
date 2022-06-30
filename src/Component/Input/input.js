@@ -5,18 +5,21 @@ import Data from "../Data/data";
 export default function Inputs(props) {
   return (
     <>
-      {Data[props.optionIndexNum].options.map((item) => {
+      {Data[props.currenQuestion].options.map((item, index) => {
         return (
           <>
-            <p style={{ color: "white" }}>
-              <input
-                name="radioButton"
-                value={item}
-                onChange={props.onChange}
-                type={"radio"}
-              />
-              {item.text}
-            </p>
+            <div key={props.Key}>
+              <p className="item-Text">
+                <input
+                  name={props.Name}
+                  id={props.Id}
+                  onChange={props.onChange}
+                  value={item}
+                  type={"radio"}
+                />
+                {item}
+              </p>
+            </div>
           </>
         );
       })}

@@ -1,17 +1,4 @@
-.main-Row{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 480px;
-}
-.main-Card-Col {
-  background-color: #0d1427;
-}
-.quiz-Text-Heading{
-  color: white;
-  text-align: center;
-}
-/* h3,
+h3,
 h5,
 h6,
 button {
@@ -120,4 +107,4 @@ button {
 .list:hover {
   background-color: white;
   color: black;
-} */
+}

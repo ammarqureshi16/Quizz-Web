@@ -42,5 +42,14 @@ const question = [
     ],
     isCorrect: "for (i = 0; i <= 5; i++)",
   },
+  {
+    text: "Where is the correct place to insert a JavaScript ?",
+    options: [
+      "The <body> section  ",
+      "The <head> section",
+      "Both the <head> section and the <body> section are correct",
+    ],
+    isCorrect: "Both the <head> section and the <body> section are correct",
+  },
 ];
 export default question;

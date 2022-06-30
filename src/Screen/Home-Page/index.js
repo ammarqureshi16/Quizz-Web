@@ -8,34 +8,33 @@ import swal from "sweetalert";
 
 export default function Home() {
   const [currenQuestion, setcurrenQuestion] = useState(0);
-  const [correctAnsw, setCorrectAnsw] = useState(0);
+  const [correctAnswer, setCorrectAnswer] = useState(0);
   const [questionNumber, setQuestionNumber] = useState(0);
-  const [result, setResult] = useState(false);
+  const [showResult, setShowResult] = useState(false);
   const [Show, setShow] = useState(false);
 
   const Next = () => {
-    if (correctAnsw === 0) {
+    if (correctAnswer === 0) {
       swal("Selet One Option Plase.");
     } else {
-      if (currenQuestion !== Quest.length - 1) {
-        setResult(true);
+      if (currenQuestion === Quest.length - 2) {
+        setShowResult(true);
       }
-      if (correctAnsw) {
+      if (correctAnswer) {
         setQuestionNumber(questionNumber + 1);
         setcurrenQuestion(currenQuestion + 1);
-        setCorrectAnsw(0);
+        setCorrectAnswer(0);
       }
     }
   };
-  console.log("chalobhai", currenQuestion);
   const Restart = () => {
     setQuestionNumber(0);
     setShow(false);
     setcurrenQuestion(0);
-    setResult(false);
+    setShowResult(false);
   };
   const Submit = () => {
-    if (Quest[currenQuestion].isCorrect === correctAnsw) {
+    if (Quest[currenQuestion].isCorrect === correctAnswer) {
       setQuestionNumber(questionNumber + 1);
     }
     setShow(true);
@@ -45,7 +44,7 @@ export default function Home() {
       swal("B  good could do better", "", "success");
     } else if ((questionNumber / Quest.length) * 100 >= 60) {
       alert();
-      swal("C  need to improve");
+      swal("C need to improve");
     } else {
       swal({
         title: "Sorry Fail",
@@ -103,13 +102,13 @@ export default function Home() {
                 <div key={currenQuestion + currenQuestion}>
                   <Raadio
                     onChange={(e) => {
-                      setCorrectAnsw(e.target.value);
+                      setCorrectAnswer(e.target.value);
                     }}
                     Name={"question" + currenQuestion}
                     currenQuestion={currenQuestion}
                   />
                 </div>
-                {result ? (
+                {showResult ? (
                   <Col
                     className="sub-Nex-Button-Col"
                     xs={11}

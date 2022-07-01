@@ -21,10 +21,13 @@ export default function Home() {
         setShowResult(true);
       }
       if (correctAnswer) {
-        setQuestionNumber(questionNumber + 1);
+        // setQuestionNumber(questionNumber + 1);
         setcurrenQuestion(currenQuestion + 1);
         setCorrectAnswer(0);
       }
+    }
+    if (Quest[currenQuestion].isCorrect === correctAnswer) {
+      setQuestionNumber(questionNumber + 1);
     }
   };
   const Restart = () => {
@@ -34,9 +37,6 @@ export default function Home() {
     setShowResult(false);
   };
   const Submit = () => {
-    if (Quest[currenQuestion].isCorrect === correctAnswer) {
-      setQuestionNumber(questionNumber + 1);
-    }
     setShow(true);
     if ((questionNumber / Quest.length) * 100 >= 80) {
       swal("A1 Grade Very Good!", "", "success");

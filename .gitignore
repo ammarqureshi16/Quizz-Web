@@ -25,3 +25,4 @@ yarn-error.log*
 # Install
 npm install react-bootstrap bootstrap
 npm install sweetalert
+npm install react-icons
